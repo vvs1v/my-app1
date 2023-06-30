@@ -31,7 +31,7 @@ function Sidebar(){
       </div>
       <div className="About">
       <div style={{backgroundColor:' rgba(0, 0, 0, 0.41)',border:'1px solid black',height:'40px',width:'100%'}}><h2>Insights</h2></div>
-         <div style={{backgroundColor:'#fff',border:'1px solid black',height:'89%',width:'100%'}}>
+         <div style={{backgroundColor:'#fff',border:'1px solid black',height:'100%',width:'100%'}}>
             <ul><li>Apache Impala is a modern, open source, distributed SQL query engine for Apache Hadoop.</li>
                 <li>Presto or PrestoDB is a distributed SQL query engine that is used best for running interactive analytic workloads in your big data environment.</li></ul>
          </div>

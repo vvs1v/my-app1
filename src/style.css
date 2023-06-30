@@ -3,6 +3,11 @@ body {
     inset: 0px;
 
 }
+@media(max-width:810px){
+    .body1 h1{
+        font-size: 1em;
+    }
+}
 .logo_kpmg{
     width: 50%;
     height: 70%;
@@ -16,27 +21,28 @@ body {
     /* display: flex;
     
     /* align-items: flex-end; */ 
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
 /* width: 220px;
 height: 36px; */
-left: 3%;
-top: 55%;
+/* left: 3%;
+top: 55%; */
 
 font-family: 'Be Vietnam';
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 35px;
-letter-spacing: 0.09em;
+/* letter-spacing: 0.09em; */
 text-transform: uppercase;
+margin: 0;
 
 color: #FFFFFF;
 }
 .panel_Header{
     width: 100%;
-    height: 40px;
+    height: 100%;
     background-color: #E6E7FC;
     border-bottom: 1px solid #9CC2FC;
     display: flex;
@@ -54,11 +60,11 @@ color: #FFFFFF;
     height: 100vh;
 }
 .Part2{
-    width: 85%;
+    width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    /* flex-direction: column;
+    justify-content: space-between; */
 }
 
 
@@ -70,7 +76,7 @@ color: #FFFFFF;
 }
 
 .footer{
-    height: 18%;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.41);
     backdrop-filter: blur(15px);
@@ -86,7 +92,7 @@ color: #FFFFFF;
 }
 
 .Body{
-    height: 80%;
+    height: 100%;
     width: 100%;
     background-color: #E6E7FC;
     display: grid;
@@ -232,4 +238,10 @@ line-height: 20%;
 color: #043C8C;
 
 /* border: 1px solid #000000; */
+}
+
+.About{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: stretch;
 }
