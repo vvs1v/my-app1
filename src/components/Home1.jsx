@@ -23,7 +23,7 @@ function Home1(){
         </div>
         <div className="Part2">
         <Header />
-        <div className="Body">
+        <div style={{backgroundColor:'#E6E7FC',borderTop: '1px solid #9CC2FC'}}>
         <Container>
       <Grid container spacing={2}>
         <Grid item xs={12}>

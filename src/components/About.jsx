@@ -20,7 +20,7 @@ function About(){
         </div>
         <div className="Part2">
         <Header />
-        <div className="Body">
+        <div style={{backgroundColor:'#E6E7FC', borderTop: '1px solid #9CC2FC'}}>
         {/* <p>Lorem ipsum dolor sit amet. A dolorum placeat est voluptatem inventore quo libero molestias ea dolorum commodi. Est voluptatem enim et optio quas aut dignissimos porro sed ipsum soluta ut doloribus tempora. Et nostrum voluptas et nesciunt odio eos laborum consequatur et provident velit qui nobis facilis vel magnam dignissimos et quia explicabo.</p> */}
           <TestimonialPage/>
         </div>

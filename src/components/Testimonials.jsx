@@ -50,9 +50,9 @@ const TestimonialPage = () => {
       </Typography>
       <Grid container spacing={4}>
         {testimonials.map((testimonial) => (
-          <Grid item xs={12} sm={8} md={4} key={testimonial.id}>
-            <div className={classes.testimonial}>
-              <Avatar
+          <Grid item xs={12} sm={8} md={3} key={testimonial.id} style={{display:'flex',flexWrap:'nowrap',flexDirection:'row',justifyContent:'space-around'}}>
+            <div className={classes.testimonial}  style={{backgroundColor:'whitesmoke',border:'1px solid #9CC2FC', borderRadius:'45px',padding:'18px'}}>
+              <Avatar style={{selfAlign:'center'}}
                 alt={testimonial.name}
                 src={`https://www.example.com/avatars/${testimonial.id}.jpg`}
                 className={classes.avatar}
