@@ -1,5 +1,7 @@
 import React from "react";
 import "../style.css"
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
 import {
@@ -16,10 +18,10 @@ import {
 
 export default function Testimonial2() {
   return (
-    <MDBContainer className="py-5" >
-      <MDBRow className="d-flex justify-content-center" style={{display:'grid',gridTemplateRows:'.1fr auto'}}>
-        <MDBCol md="10" xl="8" className="text-center">
-          <h3 className="mb-4">Testimonials</h3>
+    <MDBContainer className="py-5" style={{display:'grid',gridTemplateRows:'.2fr auto',gridTemplateColumns:'NULL',marginLeft:'0px',maxWidth:'100%',backgroundColor:'#E6E7FC',paddingTop:'1.5rem',paddingBottom:'1rem'}} >
+      <MDBRow className="d-flex justify-content-center" style={{gridColumn:'span 2'}}>
+        <MDBCol md="10" xl="8" className="text-center" >
+          <h3 className="mb-4" >Testimonials</h3>
           <p className="mb-4 pb-2 mb-md-5 pb-md-0">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
             error amet numquam iure provident voluptate esse quasi, veritatis
@@ -27,14 +29,14 @@ export default function Testimonial2() {
           </p>
         </MDBCol>
       </MDBRow>
-      <MDBRow className="text-center d-flex align-items-stretch" style={{display:'flex'}}>
+      <MDBRow className="text-center d-flex align-items-stretch" style={{gridColumn:'span 2',display:'flex'}}>
         <MDBCol md="4" className="mb-5 mb-md-0 d-flex align-items-stretch">
           <MDBCard className="testimonial-card">
             <div
               className="card-up"
               style={{ backgroundColor: "#9d789b" }}
             ></div>
-            <div className="avatar mx-auto bg-white">
+            <div className="avatar mx-auto bg-white" >
               <img
                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
                 className="rounded-circle img-fluid"
@@ -57,7 +59,7 @@ export default function Testimonial2() {
               className="card-up"
               style={{ backgroundColor: "#7a81a8" }}
             ></div>
-            <div className="avatar mx-auto bg-white">
+            <div className="avatar mx-auto bg-white" >
               <img
                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
                 className="rounded-circle img-fluid"
@@ -80,7 +82,7 @@ export default function Testimonial2() {
               className="card-up"
               style={{ backgroundColor: "#6d5b98" }}
             ></div>
-            <div className="avatar mx-auto bg-white">
+            <div className="avatar mx-auto bg-white" >
               <img
                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
                 className="rounded-circle img-fluid"
