@@ -27,7 +27,7 @@ function Home1(){
         <Container>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Typography variant="h2" className="body2">Impress</Typography>
+          <Typography variant="h2" className="body2">ImPress</Typography>
           <p> Elevate your data-driven decision-making with ImPress, empowering you to seamlessly translate and execute complex impala queries into presto queries , maximizing productivity and ROI.</p>
         </Grid>
         <Grid item xs={12}>

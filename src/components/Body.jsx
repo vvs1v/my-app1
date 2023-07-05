@@ -15,6 +15,8 @@ function Body(){
 
     const [code, setCode] = useState('');
     const [result, setResult] = useState('');
+    const[value1,setValue1] = useState('grey')
+    
   
     const handleCodeChange = (e) => {
       setCode(e.target.value);
@@ -23,7 +25,9 @@ function Body(){
     const sendDataToPython = async () => {
       try {
         const response = await axios.post('http://localhost:5000/process', { data: code });
+        // console.log("The data is ",response.data.result[1])
         setResult(response.data.result);
+        response.data.result[1]?setValue1('red'):setValue1('black')
       } catch (error) {
         console.error(error);
       }
@@ -35,7 +39,7 @@ function Body(){
 
     return <div className="Body">
         <div className="griditem body1">
-            <h1>ImPress Tool</h1>
+            <h1 style={{fontSize:'70px',fontWeight:'700'}}>ImPress Tool</h1>
             <h3>Make your life Simple</h3>
         </div>
         <div className="griditem" style={{position:'relative'}}>
@@ -65,7 +69,7 @@ function Body(){
                         </div>
                         <div className="container2 extra" style={{background:'white',padding:'5px'}}>
                         {/* <CodeEditor /> */}
-                        <p>{!result?"Your result will show up here" : result}</p>
+                        <p style={{color:value1}}>{!result ?"Your result will show up here" : result}</p>
                         </div> 
                         <div className="container2"></div>
                 

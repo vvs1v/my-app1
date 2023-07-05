@@ -1,3 +1,7 @@
+
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+  }
 body {
 
     inset: 0px;
@@ -125,7 +129,7 @@ top: 50px; */
 font-family: 'Be Vietnam';
 font-style: normal;
 font-weight: 500;
-font-size: 30px;
+font-size: 50px;
 line-height: 20%;
 /* or 79px */
 

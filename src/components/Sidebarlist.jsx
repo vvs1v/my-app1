@@ -44,9 +44,9 @@ function SidebarList(){
           <ul style={{listStyle:'none'}}>
             <li style={{padding:'5px 0px'}}> <Link key={"/home"} href={"/home"} to="/Home1"><HomeIcon style={{fontSize:'large'}}/> Home</Link></li>
             
-            <li style={{padding:'5px 0px'}}> <Link  key={"/"} href={"/"} to="/"><ApprovalIcon style={{fontSize:'large'}}/> Impress</Link></li>
+            <li style={{padding:'5px 0px'}}> <Link  key={"/"} href={"/"} to="/"><ApprovalIcon style={{fontSize:'large'}}/> ImPress</Link></li>
             
-            <li style={{padding:'5px 0px'}}> <Link  key={"/Cloud"} href={"/Cloud"} to="/Cloud"><img style={{width:'20px'}}  src={logo3} alt=""/>  cloud </Link></li>
+            {/* <li style={{padding:'5px 0px'}}> <Link  key={"/Cloud"} href={"/Cloud"} to="/Cloud"><img style={{width:'20px'}}  src={logo3} alt=""/>  cloud </Link></li> */}
             <li style={{padding:'5px 0px'}}> <Link  key={"/About"} href={"/About"} to="/About"><InfoIcon style={{fontSize:'large'}}/>  About </Link></li>
             {/* <li style={{padding:'5px 0px'}} ><img style={{width:'20px'}}  src={logo2} alt=""/>  About </li> */}
             </ul>
